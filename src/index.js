@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import art from "./art.jpg";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+import Cards from "./Cards";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <Cards imgsrc={art} titile="A Netflix Original Series" sname="DARK" />
+    <Cards imgsrc={art} titile="A Netflix Original Series" sname="DARK" />
+    <Cards imgsrc={art} titile="A Netflix Original Series" sname="DARK" />
+    <Cards imgsrc={art} titile="A Netflix Original Series" sname="DARK" />
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
